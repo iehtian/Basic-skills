@@ -24,16 +24,14 @@ void quicksort(int begin ,int end,int num[]){
     quicksort(i+1, end, num);
 }
 int main(){
-    int n;
-    scanf("%d",&n);
+    int n,m;
+    scanf("%d%d",&n,&m);
     int num[n];
     for (int i = 0; i < n; i++)
     {
         scanf("%d",&num[i]);
     }
     quicksort(0,n-1,num);
-    for (int i = 0; i < n; i++){
-        printf("%d ",num[i]);
-    }
+    printf("%d",num[m-1]);
     return 0;
 }
